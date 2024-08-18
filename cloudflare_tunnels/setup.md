@@ -1,0 +1,1 @@
+docker run -d --net=host cloudflare/cloudflared:latest tunnel --no-autoupdate run --token <token>
