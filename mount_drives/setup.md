@@ -1,4 +1,4 @@
-Use lsblk -o NAME,FSTYPE,UUID to find out the UUIDs and filesystems of the partition you want to mount.
+Use `lsblk` -f to find out the UUIDs and filesystems of the partition you want to mount.
 
 make mount directory
 
