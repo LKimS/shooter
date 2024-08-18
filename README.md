@@ -1,0 +1,2 @@
+# shooter
+Setup for homelab
