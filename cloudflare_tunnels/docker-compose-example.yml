@@ -1,6 +1,7 @@
 services:
   tunnel:
     image: cloudflare/cloudflared:latest
+    container_name: tunnel
     network_mode: "host"
     restart: unless-stopped
     command: tunnel --no-autoupdate run --token <token>
