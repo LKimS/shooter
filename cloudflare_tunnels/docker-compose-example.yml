@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  tunnel:
+    image: cloudflare/cloudflared:latest
+    network_mode: "host"
+    restart: unless-stopped
+    command: tunnel --no-autoupdate run --token <token>
+
