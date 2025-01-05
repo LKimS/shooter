@@ -4,14 +4,11 @@ services:
     container_name: jellyfin
     network_mode: 'host'
     volumes:
-      - /media/WD1T/jelly/config:/config
-      - /media/WD1T/jelly/cache:/cache
+      - /media/IF4T/jelly/config:/config
+      - /media/IF4T/jelly/cache:/cache
       - type: bind
-        source: /media/WD1T/jelly/media
+        source: /media/IF4T/jelly/media
         target: /media
-      - type: bind
-        source: /media/WD1T/jelly/media_org
-        target: /media_org
         read_only: true
     restart: 'unless-stopped'
     runtime: nvidia
