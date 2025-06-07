@@ -1,0 +1,12 @@
+services:
+  floatplane-downloader:
+    image: inrix/floatplane-downloader:dev
+    container_name: floatplane-downloader
+    environment:
+      - headless=true
+      - username=#ADDUSERNAME
+      - password=#ADDPSWD
+    volumes:
+      - /media/IF4T/floatplane-downloader/fp/db:/fp/db
+      - /media/IF4T/floatplane-downloader/fp/videos:/fp/videos
+    restart: unless-stopped
