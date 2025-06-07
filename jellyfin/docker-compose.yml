@@ -10,6 +10,11 @@ services:
         source: /media/IF4T/jelly/media
         target: /media
         read_only: true
+      - type: bind
+        source: /media/IF4T/floatplane-downloader/fp/videos
+        target: /floatplane
+        read_only: true
+ 
     restart: 'unless-stopped'
     runtime: nvidia
     deploy:
